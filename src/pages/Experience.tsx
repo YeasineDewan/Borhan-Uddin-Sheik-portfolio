@@ -220,6 +220,64 @@ function ExperienceContent() {
                   </div>
                 </div>
               </div>
+
+              {/* Medigo Health Care */}
+              <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+                <div className="flex items-center gap-4 mb-6">
+                  <h4 className="text-2xl font-bold text-slate-900">Medigo Health Care</h4>
+                  <span className="bg-[#a3ff00] text-slate-900 px-3 py-1 rounded-full text-sm font-bold">Healthcare</span>
+                </div>
+                <p className="text-slate-600 leading-relaxed mb-6">
+                  Comprehensive healthcare platform with online consultations, diagnostics, and corporate wellness programs.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">50+</div>
+                    <div className="text-slate-600 text-sm">Hospitals</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">200+</div>
+                    <div className="text-slate-600 text-sm">Doctors</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">24/7</div>
+                    <div className="text-slate-600 text-sm">Service</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">Digital</div>
+                    <div className="text-slate-600 text-sm">Platform</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Medifly Health Services */}
+              <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+                <div className="flex items-center gap-4 mb-6">
+                  <h4 className="text-2xl font-bold text-slate-900">Medifly Health</h4>
+                  <span className="bg-[#a3ff00] text-slate-900 px-3 py-1 rounded-full text-sm font-bold">Medical</span>
+                </div>
+                <p className="text-slate-600 leading-relaxed mb-6">
+                  GAMCA-accredited medical center specializing in pre-departure health screenings for overseas employment.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">10,000+</div>
+                    <div className="text-slate-600 text-sm">Screenings</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">25+</div>
+                    <div className="text-slate-600 text-sm">Countries</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">99.9%</div>
+                    <div className="text-slate-600 text-sm">Compliance</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">48hrs</div>
+                    <div className="text-slate-600 text-sm">Processing</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.section>
 
