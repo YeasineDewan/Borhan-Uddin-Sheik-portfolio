@@ -1,5 +1,5 @@
-import { ReactNode, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { ReactNode, useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   Menu,
@@ -19,6 +19,12 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const handleCVDownload = () => {
     // Create a proper download link for the PDF
@@ -52,6 +58,8 @@ export function Layout({ children }: LayoutProps) {
               <Link to="/experience" className="text-slate-600 hover:text-[#a3ff00] font-semibold transition-colors text-sm xl:text-base">Experience</Link>
               <Link to="/projects" className="text-slate-600 hover:text-[#a3ff00] font-semibold transition-colors text-sm xl:text-base">Projects</Link>
               <Link to="/contact" className="text-slate-600 hover:text-[#a3ff00] font-semibold transition-colors text-sm xl:text-base">Contact</Link>
+              <Link to="/privacy-policy" className="text-slate-600 hover:text-[#a3ff00] font-semibold transition-colors text-sm xl:text-base">Privacy</Link>
+              <Link to="/terms-of-service" className="text-slate-600 hover:text-[#a3ff00] font-semibold transition-colors text-sm xl:text-base">Terms</Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -107,6 +115,20 @@ export function Layout({ children }: LayoutProps) {
                 >
                   Contact
                 </Link>
+                <Link 
+                  to="/privacy-policy" 
+                  className="text-slate-600 hover:text-[#a3ff00] font-semibold transition-colors py-2 px-3 rounded-lg hover:bg-slate-50 text-base sm:text-lg" 
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Privacy Policy
+                </Link>
+                <Link 
+                  to="/terms-of-service" 
+                  className="text-slate-600 hover:text-[#a3ff00] font-semibold transition-colors py-2 px-3 rounded-lg hover:bg-slate-50 text-base sm:text-lg" 
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Terms of Service
+                </Link>
               </div>
             </motion.div>
           )}
@@ -153,6 +175,8 @@ export function Layout({ children }: LayoutProps) {
                 <li><Link to="/about" className="text-slate-300 hover:text-[#a3ff00] transition-colors text-sm sm:text-base">About</Link></li>
                 <li><Link to="/experience" className="text-slate-300 hover:text-[#a3ff00] transition-colors text-sm sm:text-base">Experience</Link></li>
                 <li><Link to="/projects" className="text-slate-300 hover:text-[#a3ff00] transition-colors text-sm sm:text-base">Projects</Link></li>
+                <li><Link to="/privacy-policy" className="text-slate-300 hover:text-[#a3ff00] transition-colors text-sm sm:text-base">Privacy Policy</Link></li>
+                <li><Link to="/terms-of-service" className="text-slate-300 hover:text-[#a3ff00] transition-colors text-sm sm:text-base">Terms of Service</Link></li>
               </ul>
             </div>
 
@@ -180,8 +204,8 @@ export function Layout({ children }: LayoutProps) {
           <div className="border-t border-slate-700 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-xs sm:text-sm text-center sm:text-left">© 2024 Borhan Uddin Sheik • All rights reserved</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 items-center">
-              <button className="text-slate-400 hover:text-[#a3ff00] transition-colors text-xs sm:text-sm font-semibold">Privacy Policy</button>
-              <button className="text-slate-400 hover:text-[#a3ff00] transition-colors text-xs sm:text-sm font-semibold">Terms of Service</button>
+              <Link to="/privacy-policy" className="text-slate-400 hover:text-[#a3ff00] transition-colors text-xs sm:text-sm font-semibold">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-slate-400 hover:text-[#a3ff00] transition-colors text-xs sm:text-sm font-semibold">Terms of Service</Link>
               <button 
                 onClick={handleCVDownload}
                 className="text-slate-400 hover:text-[#a3ff00] transition-colors text-xs sm:text-sm font-semibold"

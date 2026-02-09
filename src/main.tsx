@@ -7,6 +7,8 @@ import { About } from "./pages/About";
 import { Experience } from "./pages/Experience";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 function AppRouter() {
   return (
@@ -18,6 +20,8 @@ function AppRouter() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
     </Router>
   );
