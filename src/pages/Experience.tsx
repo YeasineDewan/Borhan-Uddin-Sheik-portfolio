@@ -281,16 +281,20 @@ function ExperienceContent() {
                       <h5 className="text-lg font-bold text-slate-900 mb-4">Impact Metrics</h5>
                       <div className="space-y-3">
                         <div className="flex justify-between">
-                          <span className="text-slate-600">Patient Satisfaction</span>
-                          <span className="font-bold text-[#a3ff00]">95%</span>
+                          <span className="text-slate-600">Global Gateways Clients</span>
+                          <span className="font-bold text-[#a3ff00]">2,000+</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-slate-600">Operational Efficiency</span>
-                          <span className="font-bold text-[#a3ff00]">85%</span>
+                          <span className="text-slate-600">RTTLC Students</span>
+                          <span className="font-bold text-[#a3ff00]">1,500+</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-slate-600">Quality Compliance</span>
-                          <span className="font-bold text-[#a3ff00]">100%</span>
+                          <span className="text-slate-600">Service Categories</span>
+                          <span className="font-bold text-[#a3ff00]">15+</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-slate-600">Average Satisfaction</span>
+                          <span className="font-bold text-[#a3ff00]">90.5%</span>
                         </div>
                       </div>
                     </div>
