@@ -28,6 +28,48 @@ function ProjectsContent() {
 
   const projects = [
     {
+      title: "Global Gateways Travel Services",
+      category: "Travel & Tourism",
+      status: "Ongoing",
+      period: "Present",
+      description: "Comprehensive travel agency providing visa processing, ticketing, Hajj and Umrah services, manpower recruitment, medical tourism, holiday tourism, and student visa processing with end-to-end travel solutions.",
+      highlights: [
+        "Full-service travel agency operations",
+        "Specialized Hajj and Umrah pilgrimage packages",
+        "International visa processing expertise",
+        "Medical and holiday tourism services",
+        "Student visa processing programs"
+      ],
+      impact: {
+        clients: "2,000+",
+        services: "7",
+        countries: "25+",
+        satisfaction: "96%"
+      },
+      technologies: ["Booking Systems", "Visa Processing Platform", "Customer Management", "Travel CRM"]
+    },
+    {
+      title: "Raabed Technical Training and Language Center (RTTLC)",
+      category: "Education & Training",
+      status: "Ongoing",
+      period: "Present",
+      description: "Technical training and language education center developing skilled workforce for global markets with internationally recognized courses and Singapore collaboration standards across multiple industry sectors.",
+      highlights: [
+        "Technical skills training for 8+ industry sectors",
+        "Language courses for global employment",
+        "Trade testing & certification programs",
+        "Singapore collaboration standards",
+        "Hands-on practical training approach"
+      ],
+      impact: {
+        students: "1,500+",
+        courses: "50+",
+        sectors: "8",
+        placement: "85%"
+      },
+      technologies: ["Learning Management System", "Skills Assessment Platform", "Certification Tracking", "Industry Partnerships"]
+    },
+    {
       title: "Medpark Join Medigo Hospital",
       category: "Healthcare Partnership",
       status: "Completed",
@@ -167,45 +209,46 @@ function ProjectsContent() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <div className="flex items-center gap-4 mb-6">
-                    <h4 className="text-3xl font-bold text-slate-900">Medpark Join Medigo Hospital</h4>
+                    <h4 className="text-3xl font-bold text-slate-900">Global Gateways Travel Services</h4>
                     <span className="bg-[#a3ff00] text-slate-900 px-3 py-1 rounded-full text-sm font-bold">Active</span>
                   </div>
                   <p className="text-slate-600 leading-relaxed text-lg mb-8">
-                    A groundbreaking healthcare partnership that brings cutting-edge medical technology
-                    and comprehensive specialized services to Dhanmondi, setting new standards for
-                    patient care and medical excellence in Bangladesh.
+                    A comprehensive travel agency providing end-to-end travel solutions including visa processing, 
+                    ticketing, Hajj and Umrah services, manpower recruitment, medical tourism, and student visa processing 
+                    with focus on customer satisfaction and service excellence.
                   </p>
                   <div className="grid grid-cols-2 gap-6">
                     <div className="bg-slate-50 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-[#a3ff00]">5,000+</div>
-                      <div className="text-slate-600">Patients Served</div>
+                      <div className="text-2xl font-bold text-[#a3ff00]">2,000+</div>
+                      <div className="text-slate-600">Clients Served</div>
                     </div>
                     <div className="bg-slate-50 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-[#a3ff00]">50+</div>
-                      <div className="text-slate-600">Specialized Services</div>
+                      <div className="text-2xl font-bold text-[#a3ff00]">7</div>
+                      <div className="text-slate-600">Service Categories</div>
                     </div>
                     <div className="bg-slate-50 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-[#a3ff00]">15+</div>
-                      <div className="text-slate-600">International Partners</div>
+                      <div className="text-2xl font-bold text-[#a3ff00]">25+</div>
+                      <div className="text-slate-600">Countries Covered</div>
                     </div>
                     <div className="bg-slate-50 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-[#a3ff00]">98%</div>
-                      <div className="text-slate-600">Patient Satisfaction</div>
+                      <div className="text-2xl font-bold text-[#a3ff00]">96%</div>
+                      <div className="text-slate-600">Client Satisfaction</div>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-6">
-                  <h5 className="text-xl font-bold text-slate-900 mb-4">Key Achievements</h5>
+                  <h5 className="text-xl font-bold text-slate-900 mb-4">Key Services</h5>
                   <ul className="space-y-4">
                     {[
-                      "Strategic Partnership for Advanced Healthcare",
-                      "State-of-the-Art Technology & Facilities",
-                      "Expanded Range of Specialized Services",
-                      "Joint Ventures with Overseas Providers"
-                    ].map((achievement, i) => (
+                      "Visa Processing & Documentation",
+                      "International Ticketing Services",
+                      "Hajj & Umrah Pilgrimage Packages",
+                      "Medical & Holiday Tourism",
+                      "Student Visa Processing Programs"
+                    ].map((service, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <ChevronRight size={20} className="text-[#a3ff00] mt-1 shrink-0" />
-                        <span className="text-slate-700">{achievement}</span>
+                        <span className="text-slate-700">{service}</span>
                       </li>
                     ))}
                   </ul>

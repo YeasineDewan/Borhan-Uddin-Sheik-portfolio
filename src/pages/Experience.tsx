@@ -25,6 +25,32 @@ function ExperienceContent() {
 
   const experiences = [
     {
+      title: "Global Gateways",
+      role: "Founder & Managing Director",
+      period: "Present",
+      location: "Dhaka, Bangladesh",
+      desc: "Leading a comprehensive travel agency specializing in visa processing, ticketing, Hajj and Umrah services, manpower recruitment, medical tourism, holiday tourism, and student visa processing. Providing end-to-end travel solutions with a focus on customer satisfaction and service excellence.",
+      achievements: [
+        "Established comprehensive travel service portfolio",
+        "Built partnerships with international embassies and airlines",
+        "Developed specialized Hajj/Umrah pilgrimage packages",
+        "Created streamlined visa processing systems"
+      ]
+    },
+    {
+      title: "Raabed Technical Training and Language Center (RTTLC)",
+      role: "Founder & Managing Director",
+      period: "Present", 
+      location: "Dhaka, Bangladesh",
+      desc: "Pioneering technical training and language education center focused on developing skilled workforce for global markets. Offering internationally recognized courses with hands-on practical training and Singapore collaboration standards across multiple industry sectors including Marine, Oil & Gas, Heavy Engineering, Construction, Healthcare, Agriculture, and Maintenance.",
+      achievements: [
+        "Established training programs for 8+ industry sectors",
+        "Developed internationally recognized curriculum standards",
+        "Created Singapore collaboration framework for quality assurance",
+        "Built pathways for overseas employment in Europe, Middle East, and Asia"
+      ]
+    },
+    {
       title: "Medicheck Medical Services",
       role: "Director",
       period: "Present",
@@ -131,7 +157,7 @@ function ExperienceContent() {
             </div>
 
             <div className="space-y-12">
-              {experiences.slice(0, 3).map((exp, i) => (
+              {experiences.slice(0, 5).map((exp, i) => (
                 <motion.div
                   key={i}
                   variants={fadeIn}
