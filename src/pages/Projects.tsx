@@ -5,8 +5,7 @@ import {
   Users,
   Globe,
   TrendingUp,
-  Calendar,
-  MapPin
+  Calendar
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Layout } from '../components/Layout';
