@@ -35,7 +35,13 @@ function ExperienceContent() {
         "Built partnerships with international embassies and airlines",
         "Developed specialized Hajj/Umrah pilgrimage packages",
         "Created streamlined visa processing systems"
-      ]
+      ],
+      metrics: {
+        clients: "2,000+",
+        services: "7",
+        countries: "25+",
+        satisfaction: "96%"
+      }
     },
     {
       title: "Raabed Technical Training and Language Center (RTTLC)",
@@ -48,7 +54,13 @@ function ExperienceContent() {
         "Developed internationally recognized curriculum standards",
         "Created Singapore collaboration framework for quality assurance",
         "Built pathways for overseas employment in Europe, Middle East, and Asia"
-      ]
+      ],
+      metrics: {
+        students: "1,500+",
+        courses: "50+",
+        sectors: "8",
+        placement: "85%"
+      }
     },
     {
       title: "Medicheck Medical Services",
@@ -140,6 +152,76 @@ function ExperienceContent() {
 
       <div className="container mx-auto px-6 py-16">
         <div className="max-w-6xl mx-auto">
+
+          {/* Featured Projects */}
+          <motion.section {...fadeIn} className="mb-20">
+            <div className="flex items-center gap-3 mb-10">
+              <div className="p-2 bg-[#a3ff00] rounded-lg">
+                <Briefcase size={24} />
+              </div>
+              <h3 className="text-3xl font-bold uppercase tracking-tight">Featured Projects</h3>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 mb-12">
+              {/* Global Gateways */}
+              <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+                <div className="flex items-center gap-4 mb-6">
+                  <h4 className="text-2xl font-bold text-slate-900">Global Gateways</h4>
+                  <span className="bg-[#a3ff00] text-slate-900 px-3 py-1 rounded-full text-sm font-bold">Travel Services</span>
+                </div>
+                <p className="text-slate-600 leading-relaxed mb-6">
+                  Comprehensive travel agency providing visa processing, ticketing, Hajj/Umrah services, and more.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">2,000+</div>
+                    <div className="text-slate-600 text-sm">Clients</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">7</div>
+                    <div className="text-slate-600 text-sm">Services</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">25+</div>
+                    <div className="text-slate-600 text-sm">Countries</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">96%</div>
+                    <div className="text-slate-600 text-sm">Satisfaction</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* RTTLC */}
+              <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+                <div className="flex items-center gap-4 mb-6">
+                  <h4 className="text-2xl font-bold text-slate-900">RTTLC</h4>
+                  <span className="bg-[#a3ff00] text-slate-900 px-3 py-1 rounded-full text-sm font-bold">Education</span>
+                </div>
+                <p className="text-slate-600 leading-relaxed mb-6">
+                  Technical training and language education center developing skilled workforce for global markets.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">1,500+</div>
+                    <div className="text-slate-600 text-sm">Students</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">50+</div>
+                    <div className="text-slate-600 text-sm">Courses</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">8</div>
+                    <div className="text-slate-600 text-sm">Sectors</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg text-center">
+                    <div className="text-xl font-bold text-[#a3ff00]">85%</div>
+                    <div className="text-slate-600 text-sm">Placement</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.section>
 
           {/* Current Leadership */}
           <motion.section
